@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-image: url('quiz.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    color: #333;
+  }
+  
+  #resultContainer {
+    max-width: 800px;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #3498db;
+  }
+  
+  h2 {
+    color: #2ecc71;
+  }
+  
+  #correctCount, #wrongCount {
+    font-size: 15px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  #correctCount span, #wrongCount span {
+    font-size: 15px;
+    font-weight: bold;
+    color: #e74c3c;
+  }
+  
+  #chartContainer {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto; 
+  }
+  
+
+  /* style_result.css */
+
+#questionContainer {
+    margin-top: 20px;
+  }
+  
+  .check-icon {
+    display: inline-block;
+    width: 20px; /* Điều chỉnh kích thước biểu tượng dấu tích */
+    height: 20px;
+    background-image: url('checklist.png'); /* Đường dẫn đến hình ảnh dấu tích */
+    background-size: cover;
+    margin-left: 10px; /* Khoảng cách giữa văn bản và biểu tượng */
+  }
+
+  .check-icon-red {
+    display: inline-block;
+    width: 20px; /* Điều chỉnh kích thước biểu tượng dấu tích */
+    height: 20px;
+    background-image: url('cross.png'); /* Đường dẫn đến hình ảnh dấu tích */
+    background-size: cover;
+    margin-left: 10px; /* Khoảng cách giữa văn bản và biểu tượng */
+  }
+  
+  #questionList div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  #questionList p {
+    text-align: left;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #333;
+    flex-grow: 1; /* Để <p> mở rộng để chiếm hết không gian còn trống */
+  }

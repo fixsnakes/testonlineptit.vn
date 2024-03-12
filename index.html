@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Ptit Test Online</title>
+</head>
+<body>
+    <div class="img-left">
+        <img id="left"  src="assets/left-img.jpg" alt="">
+    </div>
+    <div class="img-right">
+        <img id="right" src="assets/right-img.jpg" alt="">
+    </div>
+
+
+   <div class="nav-bar">
+        <div class="logo">
+            <img src="assets/ptit-logo.png" alt="" id="logo-ptit">
+            <h2 >Online Test PTIT</h2>
+        </div>
+        
+        <ul>
+            <li><a href="#">Trang Chủ</a></li>
+            <li><a href="#">Giới Thiệu</a></li>
+            <li><a href="#">Thư Viện</a></li>
+            <li><a href="#">Email</a></li>
+        </ul>
+        <button class="btnSignup" type="button" onclick="GotoRegisterPage()">Đăng Ký</button>
+   </div>
+   <div class="container">
+        <div class="wrapper">
+            <div class="form-login">
+                <div class="login-logo">
+                    <img id="logo-login" src="assets/ptit-logo.png" alt="">
+                </div>
+                <h2>Đăng Nhập</h2>
+                <p id="status-paragraph"></p>
+                <div class="label_input">
+                    <i class="fa-solid fa-user"></i>
+                    <label id="input-field" for="username">Tài Khoản</label>
+                </div>
+                
+                <input type="text" id="username" placeholder="Nhập Tài Khoản">
+                <div class="label_input">
+                    <i class="fa-solid fa-lock"></i>
+                    <label id="input-field"  for="password">Mật Khẩu</label>
+                </div>
+                <input  type="password" id="password" placeholder="Nhập Mật Khẩu">
+                <div class="help-info">
+                    <div class="save-info">
+                        <input type="checkbox" id="check-box">
+                        <label id="save-infor" for="check-box">Ghi Nhớ</label>
+                    </div>
+                    <a id="forget-password" href="#">Quên Mật Khẩu?</a>
+                </div>
+                <button id="btnSignin" onclick="ValidateFormLogin()">Đăng Nhập</button>
+                <p>Kết Nối Với Chúng Tôi Qua</p>
+                <div class="social-connect">
+                    <a href="#"><img src="assets/facebook.png" alt=""></a>
+                    <a href="#"><img src="assets/instagram.png" alt=""></a>
+                    <a href="#"><img src="assets/twitter.png" alt=""></a>
+                </div>
+            </div>
+            <div class="img-gif">
+                <img src="assets/login_video.gif" alt="" id="login-gif">
+            </div>
+        </div>
+       
+   </div>
+   <script src="scripts.js"></script>
+</body>
+</html>
